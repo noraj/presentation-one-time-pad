@@ -58,9 +58,11 @@ Le mot *pad* vient des premières implémentations où le support des clés éta
 
 One-time-pad ne propose pas de service d'authentification.
 Des méthodes d'authentification classiques peuvent êtres utilisées en plus de one-time-pad:
+
 - MAC: Code d'authentification de message (Semblable au hash du message (message+clef secrete)
 - Hashage classiqe
 - Russian copulation (Réarrangement de message)
+
 Cependant ces techniques d'authentification ne dispose pas de la qualité d'être parfaitement sûres comme one-time-pad.
 
 ### Véritable aléa
