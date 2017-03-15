@@ -4,8 +4,6 @@ Le *One Time Pad* (OTP) aussi appelé *masque jetable* est une technique simple 
 
 A ne pas confondre avec le One Time Password.
 
-[Wikipedia](https://en.wikipedia.org/wiki/One-time_pad)
-
 ## Concepte
 
 L'OTP est une technique de cryptographie qui ne peut pas être crackée mais qui requiert l'utilisation d'une clé partagée à utilisation unique de la même longeur que le message à envoyer.
@@ -21,6 +19,24 @@ Chaque bit/octet du message est chiffré en le combinant avec le bit/octet corre
 + Alphabet : taille **x**
 + Chiffrement : `(message + clé) mod 26`
 + Déchiffrement : `(message - clé) mod 26`
+
+![](src/otp-Diagram.svg)
+
+Chiffrement :
+
+```
+07 (H)  04 (E)  11 (L)  11 (L)  14 (O)  message
++
+23 (X)  12 (M)  02 (C)  10 (K)  11 (L)  key
+=
+30      16      13      21      25      message + key
+=
+04 (E)  16 (Q)  13 (N)  21 (V)  25 (Z)  (message + key) mod 26
+```
+
+Déchiffrement :
+
+
 
 ### Tentative de Cryptanalyse
 
@@ -51,3 +67,7 @@ Le mot *pad* vient des premières implémentations où le support des clés éta
 ### Exploitations
 
 + Many Time Pad Attack – Crib Drag
+
+## Sources
+
+[Wikipedia](https://en.wikipedia.org/wiki/One-time_pad)
