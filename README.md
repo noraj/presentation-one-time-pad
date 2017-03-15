@@ -6,7 +6,7 @@ A ne pas confondre avec le One Time Password.
 
 ## Concepte
 
-L'OTP est une technique de cryptographie qui ne peut pas être crackée mais qui requiert l'utilisation d'une clé partagée à utilisation unique de la même longeur que le message à envoyer.
+L'OTP est une technique de cryptographie qui ne peut pas être cassée mais qui requiert l'utilisation d'une clé partagée à utilisation unique de la même longeur que le message à envoyer.
 
 La clé est aussi appelée *pad* ou *masque*.
 
@@ -58,7 +58,22 @@ En fait, il est possible de décrypté tous les messages possible avec le même 
 
 Dès que le message est grand, la clé étant de même taille, il devient impossible de tester toutes les possibilités (ex: clé de 50Mo), et le nombre de texte possible devient aussi démusérément grand.
 
-## Confidentialité parfaite
+## Sécurité parfaite
+
+Le one-time pad est le seul chiffrement respectant les critères de sécurité inconditionnelle (un attaquant ne peut pas obtenir d'information sur le texte clair à partir du texte chiffré et donc l'algorithme est incassable par Cryptanalyse).
+
+La sécurité d'OPT est parfaite car pour une clé donnée, parfaitement aléatoire et utilisée seulement une fois, le message chiffré peut être traduit en tous les messages chiffrés de même taille, et ils sont tous équiprobable.
+
+La probabilité qu'une message en clair soit le bon est égale à la probabilité qu'un message en clair soit le bon étant donné le message chiffré.
+
+Cela peut être écrit:
++ `H(M) = H(M|C)`
++ `H(M)` : entropie
++ `H(M|C)` : entropie conditionnelle
+
+Les algorithes de chiffrement symétrique utilisent des combinaisons de substitutions et de transpositions. Pour les meilleurs d'entre eux, on ne sait pas si il existe un moyen cryptographique de faire l'inverse de ces procédés sans connaitre la clé utilisée.
+
+XXXXXXXXX algo asymétrique
 
 ## Histoire
 
@@ -88,4 +103,7 @@ Le mot *pad* vient des premières implémentations où le support des clés éta
 
 ## Sources
 
-[Wikipedia](https://en.wikipedia.org/wiki/One-time_pad)
++ [Wikipedia One-time pad](https://en.wikipedia.org/wiki/One-time_pad)
++ [Wikipedia Information-theoric security](https://en.wikipedia.org/wiki/Information-theoretic_security)
++ [Wikipedia Entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory))
++ [Wikipedia Conditional entropy](https://en.wikipedia.org/wiki/Conditional_entropy)
