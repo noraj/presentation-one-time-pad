@@ -89,6 +89,15 @@ Le mot *pad* vient des premières implémentations où le support des clés éta
 
 ### Authentification
 
+One-time-pad ne propose pas de service d'authentification.
+Des méthodes d'authentification classiques peuvent êtres utilisées en plus de one-time-pad:
+
+- MAC: Code d'authentification de message (Semblable au hash du message (message+clef secrete)
+- Hashage classiqe
+- Russian copulation (Réarrangement de message)
+
+Cependant ces techniques d'authentification ne dispose pas de la qualité d'être parfaitement sûres comme one-time-pad.
+
 ### Véritable aléa
 
 ## Cas d'utilisations
@@ -96,6 +105,15 @@ Le mot *pad* vient des premières implémentations où le support des clés éta
 ### Applicabilité
 
 ### Utilisations historiques
+
+One-time-pad est connu pour avoir été utilisé, depuis les années 1900, pour les communications spéciales des états:
+
+- Pour les échanges diplomatiques (Dès 1923 en Allemagne, Téléphone rouge Washington-Moscou)
+- Par les services secrets (agents secrets)
+- Par les forces spéciales
+- Implémenté sous forme de machines à ruban perforés (notamment durant la seocnde guerre mondiale)
+
+![Noreen machine](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Noreen.jpg/1280px-Noreen.jpg)
 
 ### Exploitations
 
@@ -107,3 +125,6 @@ Le mot *pad* vient des premières implémentations où le support des clés éta
 + [Wikipedia Information-theoric security](https://en.wikipedia.org/wiki/Information-theoretic_security)
 + [Wikipedia Entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory))
 + [Wikipedia Conditional entropy](https://en.wikipedia.org/wiki/Conditional_entropy)
++ [Wikipedia Authentication](https://en.wikipedia.org/wiki/Authentication)
++ [Wikipedia Russian copulation](https://en.wikipedia.org/wiki/Russian_copulation)
++ [Wikipedia Universal_hashing](https://en.wikipedia.org/wiki/Universal_hashing)
