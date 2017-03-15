@@ -48,6 +48,16 @@ Déchiffrement :
 
 ### Tentative de Cryptanalyse
 
++ Texte chiffré : `EQNVZ`
++ Clé n°1 : `XMCKL` -> message n°1 : `HELLO`
++ Clé n°2 : `TQURI` -> message n°2 : `LATER`
+
+Si un attaquant possède un temps infini et qu'il peut essayer toutes les combinaisons de clé possibles, il sera en mesure de trouvé plusieurs clés avec un message plausible.
+
+En fait, il est possible de décrypté tous les messages possible avec le même nombre de charactères, mais il n'y a aucune information dans le texte permettant de choisir le bon message.
+
+Dès que le message est grand, la clé étant de même taille, il devient impossible de tester toutes les possibilités (ex: clé de 50Mo), et le nombre de texte possible devient aussi démusérément grand.
+
 ## Confidentialité parfaite
 
 ## Histoire
