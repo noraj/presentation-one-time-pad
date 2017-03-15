@@ -27,16 +27,24 @@ Chiffrement :
 ```
 07 (H)  04 (E)  11 (L)  11 (L)  14 (O)  message
 +
-23 (X)  12 (M)  02 (C)  10 (K)  11 (L)  key
+23 (X)  12 (M)  02 (C)  10 (K)  11 (L)  clé
 =
-30      16      13      21      25      message + key
+30      16      13      21      25      message + clé
 =
-04 (E)  16 (Q)  13 (N)  21 (V)  25 (Z)  (message + key) mod 26
+04 (E)  16 (Q)  13 (N)  21 (V)  25 (Z)  (message + clé) mod 26
 ```
 
 Déchiffrement :
 
-
+```
+004 (E) 16 (Q)  13 (N)  21 (V)  25 (Z)  texte chiffré
+-
+023 (X) 12 (M)  02 (C)  10 (K)  11 (L)  clé
+=
+-19     4       11      11      14      texte chiffré - clé
+=
+007 (H) 04 (E)  11 (L)  11 (L)  14 (O)  message
+```
 
 ### Tentative de Cryptanalyse
 
