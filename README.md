@@ -111,7 +111,7 @@ One-time-pad est connu pour avoir été utilisé, depuis les années 1900, pour 
 - Pour les échanges diplomatiques (Dès 1923 en Allemagne, Téléphone rouge Washington-Moscou)
 - Par les services secrets (agents secrets)
 - Par les forces spéciales
-- Implémenté sous forme de machines à ruban perforés (notamment durant la seocnde guerre mondiale)
+- Implémenté sous forme de machines à ruban perforés (notamment durant la seconde guerre mondiale)
 
 ![Noreen machine](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Noreen.jpg/1280px-Noreen.jpg)
 
