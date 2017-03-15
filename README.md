@@ -73,6 +73,15 @@ Cependant ces techniques d'authentification ne dispose pas de la qualité d'êtr
 
 ### Utilisations historiques
 
+One-time-pad est connu pour avoir été utilisé, depuis les années 1900, pour les communications spéciales des états:
+
+- Pour les échanges diplomatiques (Dès 1923 en Allemagne, Téléphone rouge Washington-Moscou)
+- Par les services secrets (agents secrets) 
+- Par les forces spéciales
+- Implémenté sous forme de machines à ruban perforés (notamment durant la seocnde guerre mondiale)
+
+![Noreen machine](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Noreen.jpg/1280px-Noreen.jpg)
+
 ### Exploitations
 
 + Many Time Pad Attack – Crib Drag
@@ -80,3 +89,6 @@ Cependant ces techniques d'authentification ne dispose pas de la qualité d'êtr
 ## Sources
 
 [Wikipedia](https://en.wikipedia.org/wiki/One-time_pad)
+[Wikipedia](https://en.wikipedia.org/wiki/Authentication)
+[Wikipedia](https://en.wikipedia.org/wiki/Russian_copulation)
+[Wikipedia](https://en.wikipedia.org/wiki/Universal_hashing)
