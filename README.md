@@ -71,9 +71,9 @@ Cela peut être écrit:
 + `H(M)` : entropie
 + `H(M|C)` : entropie conditionnelle
 
-Les algorithmes de chiffrement symétrique utilisent des combinaisons de substitutions et de transpositions. Pour les meilleurs d'entre eux, on ne sait pas si il existe un moyen cryptographique de faire l'inverse de ces procédés sans connaître la clé utilisée.
+Les algorithmes de chiffrement symétriques utilisent des combinaisons de substitutions et de transpositions. Pour les meilleurs d'entre eux, on ne sait pas si il existe un moyen cryptographique de faire l'inverse de ces procédés sans connaître la clé utilisée.
 
-XXXXXXXXX algo asymétrique
+Les algorithmes de chiffrement asymétriques dépendent des problèmes mathématiques difficiles à résoudre comme la factorisation d'entier ou les logarithmes discrets. Cependant il n'y a pas de preuve que ces problèmes sont dur, et une avancée mathématique (comme les mathématiques quantiques) pourrait rendre le système vulnérable.
 
 ## Histoire
 
