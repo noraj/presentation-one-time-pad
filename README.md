@@ -6,7 +6,7 @@ A ne pas confondre avec le One Time Password.
 
 ## Concepte
 
-L'OTP est une technique de cryptographie qui ne peut pas être cassée mais qui requiert l'utilisation d'une clé partagée à utilisation unique de la même longeur que le message à envoyer.
+L'OTP est une technique de cryptographie qui ne peut pas être cassée mais qui requiert l'utilisation d'une clé partagée à utilisation unique de la même longueur que le message à envoyer.
 
 La clé est aussi appelée *pad* ou *masque*.
 
@@ -54,9 +54,9 @@ Déchiffrement :
 
 Si un attaquant possède un temps infini et qu'il peut essayer toutes les combinaisons de clé possibles, il sera en mesure de trouvé plusieurs clés avec un message plausible.
 
-En fait, il est possible de décrypté tous les messages possible avec le même nombre de charactères, mais il n'y a aucune information dans le texte permettant de choisir le bon message.
+En fait, il est possible de décrypté tous les messages possible avec le même nombre de caractères, mais il n'y a aucune information dans le texte permettant de choisir le bon message.
 
-Dès que le message est grand, la clé étant de même taille, il devient impossible de tester toutes les possibilités (ex: clé de 50Mo), et le nombre de texte possible devient aussi démusérément grand.
+Dès que le message est grand, la clé étant de même taille, il devient impossible de tester toutes les possibilités (ex: clé de 50Mo), et le nombre de texte possible devient aussi démesurément grand.
 
 ## Sécurité parfaite
 
@@ -71,7 +71,7 @@ Cela peut être écrit:
 + `H(M)` : entropie
 + `H(M|C)` : entropie conditionnelle
 
-Les algorithes de chiffrement symétrique utilisent des combinaisons de substitutions et de transpositions. Pour les meilleurs d'entre eux, on ne sait pas si il existe un moyen cryptographique de faire l'inverse de ces procédés sans connaitre la clé utilisée.
+Les algorithmes de chiffrement symétrique utilisent des combinaisons de substitutions et de transpositions. Pour les meilleurs d'entre eux, on ne sait pas si il existe un moyen cryptographique de faire l'inverse de ces procédés sans connaître la clé utilisée.
 
 XXXXXXXXX algo asymétrique
 
@@ -92,11 +92,11 @@ Le mot *pad* vient des premières implémentations où le support des clés éta
 One-time-pad ne propose pas de service d'authentification.
 Des méthodes d'authentification classiques peuvent êtres utilisées en plus de one-time-pad:
 
-- MAC: Code d'authentification de message (Semblable au hash du message (message+clef secrete)
-- Hashage classiqe
-- Russian copulation (Réarrangement de message)
+- MAC: Code d'authentification de message (Semblable au hash du message (message + clef secrète)
+- Hashage classique
+- Russian copulation (Ré-arrangement de message)
 
-Cependant ces techniques d'authentification ne dispose pas de la qualité d'être parfaitement sûres comme one-time-pad.
+Cependant ces techniques d'authentification ne dispose pas de la qualité d'être parfaitement sûres comme one-time pad.
 
 ### Véritable aléa
 
@@ -127,4 +127,4 @@ One-time-pad est connu pour avoir été utilisé, depuis les années 1900, pour 
 + [Wikipedia Conditional entropy](https://en.wikipedia.org/wiki/Conditional_entropy)
 + [Wikipedia Authentication](https://en.wikipedia.org/wiki/Authentication)
 + [Wikipedia Russian copulation](https://en.wikipedia.org/wiki/Russian_copulation)
-+ [Wikipedia Universal_hashing](https://en.wikipedia.org/wiki/Universal_hashing)
++ [Wikipedia Universal hashing](https://en.wikipedia.org/wiki/Universal_hashing)
