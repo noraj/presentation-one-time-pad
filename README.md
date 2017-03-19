@@ -85,6 +85,15 @@ Le mot *pad* vient des premières implémentations où le support des clés éta
 
 ## Problèmes
 
+Malgré que sa sécurité soit très forte le one-time pad possède de sérieux inconvénient en pratique car il requiert:
++ Des pad parfaitement aléatoires (non pas pseudo-aléatoires), ce qui est difficile à produire en informatique.
++ Une génération et un échange des pad de manière sécurisé
++ Les pad doivent être au moins de taille égale au message
++ Garder les pad secrets, sachant qu'un pad ne doit être utilisé qu'une fois, il va falloir garder beaucoup de pad et veiller à ce qu'ils ne soient pas ré-utilisés.
++ Difficultés à complètement effacer les données sur un média informatique (ex: traces des pad en mémoire)
+
+A l'heure d'aujourd'hui, il existe plusieurs algorithmes dont la sécurité n'est pas considérée comme menacée qui sont beaucoup plus facile à utiliser qu'OTP en pratique.
+
 ### Distribution des clefs
 
 ### Authentification
@@ -96,7 +105,7 @@ Des méthodes d'authentification classiques peuvent êtres utilisées en plus de
 - Hashage classique
 - Russian copulation (Ré-arrangement de message)
 
-Cependant ces techniques d'authentification ne dispose pas de la qualité d'être parfaitement sûres comme one-time pad.
+Cependant ces techniques d'authentification ne disposent pas de la qualité d'être parfaitement sûres comme one-time pad.
 
 ### Véritable aléa
 
@@ -128,3 +137,4 @@ One-time-pad est connu pour avoir été utilisé, depuis les années 1900, pour 
 + [Wikipedia Authentication](https://en.wikipedia.org/wiki/Authentication)
 + [Wikipedia Russian copulation](https://en.wikipedia.org/wiki/Russian_copulation)
 + [Wikipedia Universal hashing](https://en.wikipedia.org/wiki/Universal_hashing)
++ [Wikipedia Data remanence](https://en.wikipedia.org/wiki/Data_remanence)
