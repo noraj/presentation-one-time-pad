@@ -71,10 +71,6 @@ Cela peut être écrit:
 + `H(M)` : entropie
 + `H(M|C)` : entropie conditionnelle
 
-Les algorithmes de chiffrement symétriques utilisent des combinaisons de substitutions et de transpositions. Pour les meilleurs d'entre eux, on ne sait pas si il existe un moyen cryptographique de faire l'inverse de ces procédés sans connaître la clé utilisée.
-
-Les algorithmes de chiffrement asymétriques dépendent des problèmes mathématiques difficiles à résoudre comme la factorisation d'entier ou les logarithmes discrets. Cependant il n'y a pas de preuve que ces problèmes sont dur, et une avancée mathématique (comme les mathématiques quantiques) pourrait rendre le système vulnérable.
-
 ## Histoire
 
 D'abord décrit par Frank Miler en 1882 pour sécuriser le télégraphe, l'OTP a été ré-inventé en 1917. Le 22 juillet 1919, un brevet états-uniens a été déposé apr Gilbert Vernam sur l'opération XOR utilisée pour le chiffrement d'OTP.
@@ -119,6 +115,10 @@ Cependant ces techniques d'authentification ne disposent pas de la qualité d'ê
 
 ### Véritable aléa
 
+Générer des nombre vraiment aléatoire est difficile. La plupart des lib ne peuvent pas être utilisées même les générateurs de nombre aléatoires physique qui peuvent utiliser des fonctions crytpo qui n'ont pas été prouvé.
+
+Le pad ne doit surtout pas être ré-utilisé sinon de simples opérations mathématiques peuvent réduire l'OTP à une simple substitution polyalphabétique. Et si le message est dans un langage naturel alors il sera probable de réussir à retrouver le message par de la cryptanalyse heuristique.
+
 ## Cas d'utilisations
 
 ### Applicabilité
@@ -136,7 +136,17 @@ One-time-pad est connu pour avoir été utilisé, depuis les années 1900, pour 
 
 ### Exploitations
 
-+ Many Time Pad Attack – Crib Drag
++ Many Time Pad Attack – Crib Dragging
+
+## Conclusion
+
+Les algorithmes de chiffrement asymétriques dépendent des problèmes mathématiques difficiles à résoudre comme la factorisation d'entier ou les logarithmes discrets. Cependant il n'y a pas de preuve que ces problèmes sont dur, et une avancée mathématique (comme les mathématiques quantiques) pourrait rendre le système vulnérable.
+
+Les algorithmes de chiffrement symétriques utilisent des combinaisons de substitutions et de transpositions. Pour les meilleurs d'entre eux, on ne sait pas si il existe un moyen cryptographique de faire l'inverse de ces procédés sans connaître la clé utilisée.
+
+OTP est le seul algorithme prouvé comme sûr.
+
+OTP est donc une bonne alternative lorsque l'on a besoin de garantir le chiffrement de message très confidentiel et que l'on peut respecter les pré-requis.
 
 ## Sources
 
@@ -148,3 +158,5 @@ One-time-pad est connu pour avoir été utilisé, depuis les années 1900, pour 
 + [Wikipedia Russian copulation](https://en.wikipedia.org/wiki/Russian_copulation)
 + [Wikipedia Universal hashing](https://en.wikipedia.org/wiki/Universal_hashing)
 + [Wikipedia Data remanence](https://en.wikipedia.org/wiki/Data_remanence)
++ [Wikipedia Running key cipher](https://en.wikipedia.org/wiki/Running_key_cipher)
++ [Blog: Many Time Pad Attack Crib Dragging](http://travisdazell.blogspot.fr/2012/11/many-time-pad-attack-crib-drag.html)
