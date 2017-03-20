@@ -104,9 +104,10 @@ Et plus le réseaux est grand plus il sera difficile de se partager les clés.
 
 ### Authentification
 
-One-time-pad ne propose pas de service d'authentification.
+Le mode de fonctionnement du One-time-pad implique qu'il propose pas de service d'authentification. Un attaquant connaissant une partie du message pourrait donc déterminer une partie de la clef grâce à la combinaison du clair et du chiffre connus. 
+Il pourrais ainsi utiliser cette partie de clef connus et réécrire une partie du message, sans que cette modification n'ai pu être détectée.
 
-Des méthodes d'authentification classiques peuvent êtres utilisées en plus de one-time-pad:
+Des méthodes d'authentification classiques peuvent donc êtres utilisées en plus de one-time-pad, par exemple:
 - MAC: Code d'authentification de message (Semblable au hash du message (message + clef secrète)
 - Hashage classique
 - Russian copulation (Ré-arrangement de message)
@@ -123,14 +124,20 @@ Le pad ne doit surtout pas être ré-utilisé sinon de simples opérations math�
 
 ### Applicabilité
 
+- Malgré ses problèmes le One-time-pad conserve un certain intéret pratique. Il est notamment utile car il est possible de l'utiliser "à la main", là ou la pluparts des autres algorithmes sont impossibles à appliquer sans l'aide d'ordinateurs.
+Dans le monde de l'espionnage un espion pourra se voir remettre une liste des clefs à utiliser et ainsi chiffrer/déchiffrer ses messages sans avoir besoin de matériel risquant d'attirer l'attention.
+- Sa capacité à être applicable à la main étais très intéressante lorsque les ordinateurs n'existait pas encore. Et elle le reste encore aujourd'hui lorsque, par exemple, aucun matériel informatique de confiance n'est disponible.
+- Il est notamment utilisé dans le processus de distribution quantique de clefs.
+- Les algorithmes de chiffrement de flux imite le fonctionnement du One-time-pad. Ces algorithmes sacrifient la propriété d'être parfaitement sécurisés au profit d'une utilisation plus aisée. Notamment en permettant la réutilisation d'ne clef de petite taille pour chiffrer plusieurs messages.
+
 ### Utilisations historiques
 
 One-time-pad est connu pour avoir été utilisé, depuis les années 1900, pour les communications spéciales des états:
 
-- Pour les échanges diplomatiques (Dès 1923 en Allemagne, Téléphone rouge Washington-Moscou)
-- Par les services secrets (agents secrets)
-- Par les forces spéciales
-- Implémenté sous forme de machines à ruban perforés (notamment durant la seconde guerre mondiale)
+- Il a été utilisé pour les échanges diplomatiques. Dès 1923 en Allemagne  ainsi que pour la mise en place du téléphone rouge entre Washington et Moscou.
+- Il a été utilisé par les services secrets de multiples pays dans le monde depuis sa création.
+- Au même titre que les agents secrets les forces spéciales des armées du monde entier ont eu recours à One-time-pad pour transmettre leurs messages.
+- Dès la seconde guerre mondiale il a été implémenté sous forme de machines à ruban perforés. D'abord à des fins militaires et ensuite développer pour le monde civil après la guerre.
 
 ![Noreen machine](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Noreen.jpg/1280px-Noreen.jpg)
 
