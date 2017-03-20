@@ -96,11 +96,21 @@ A l'heure d'aujourd'hui, il existe plusieurs algorithmes dont la sécurité n'es
 
 ### Distribution des clefs
 
+Le pad est comme un secret il doit être donné et gardé de manière sécurisé, et il doit être aussi long que le message.
+
+Donc pourquoi ne pas directement envoyer le message plutôt que le pad puisque les deux font la même taille et qu'ils doivent être envoyés de manière sécurisé ?
+
+Par contre on peut s'envoyer un long pad (ex: un disque dur pleinde données aléatoires) qui pourra être utilisé pour plusieurs échange jusqu'à ce que la somme de leur tailles fassent celle du pad.
+
+Comme les clés sont très grandes ils faut souvent les transporter sur des supports comme un DVD, uen clé USB ou un disque dur mais transporter le pad physiquement reste tout de même beaucoup plus contraignant comparé aux aalgorithme de négotiation de clé.
+
+Et plus le réseaux est grand plus il sera difficile de se partager les clés. 
+
 ### Authentification
 
 One-time-pad ne propose pas de service d'authentification.
-Des méthodes d'authentification classiques peuvent êtres utilisées en plus de one-time-pad:
 
+Des méthodes d'authentification classiques peuvent êtres utilisées en plus de one-time-pad:
 - MAC: Code d'authentification de message (Semblable au hash du message (message + clef secrète)
 - Hashage classique
 - Russian copulation (Ré-arrangement de message)
