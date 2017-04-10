@@ -167,13 +167,13 @@ La probabilité qu'une message en clair soit le bon est égale à la probabilit�
 ## Histoire
 
 + *Décrit* par **Frank Miler** en **1882** => télégraphe
-+ *ré-inventé* en **1917**
++ *réinventé* en **1917**
 + *Brevet XOR* par **Gilbert Vernam** le **22 juillet 1919**
 + **OTP** dérivé du **chiffrement de Vernam** (vulnérable, clé en boucle)
 + clé sur *bloc note* (*pad of paper*)
 
 Note:
-D'abord décrit par Frank Miler en 1882 pour sécuriser le télégraphe, l'OTP a été ré-inventé en 1917. Le 22 juillet 1919, un brevet états-uniens a été déposé par Gilbert Vernam sur l'opération XOR utilisée pour le chiffrement d'OTP.
+D'abord décrit par Frank Miler en 1882 pour sécuriser le télégraphe, l'OTP a été ré-inventé en 1917. Le 22 juillet 1919, un brevet étatsuniens a été déposé par Gilbert Vernam sur l'opération XOR utilisée pour le chiffrement d'OTP.
 
 L'OTP est un dérivé du chiffrement de Vernam mais la forme originelle du chiffrement de Vernam était vulnérable car la clé était répétée en boucle.
 
@@ -187,7 +187,7 @@ Le mot *pad* vient des premières implémentations où le support des clés éta
 + génération et échange des pads de manière sécurisée
 + taille(clé) == taille(message)
 + garder les pads secrets
-+ effacer les donées
++ effacer les données
 + il y a plus facile
 
 Note:
@@ -206,7 +206,7 @@ A l'heure d'aujourd'hui, il existe **plusieurs algorithmes** dont la **sécurit�
 
 Envoyer le message plutôt que le pad puisque les deux font la même taille et qu'ils doivent être envoyés de manière sécurisé ?
 
-<p class="fragment fade-up">Envoyer un long pad (ex: HDD) qui peut être *consomé* au fûr et à mesure.</p>
+<p class="fragment fade-up">Envoyer un long pad (ex: HDD) qui peut être *consommé* au fur et à mesure.</p>
 
 Note:
 Le pad est comme un secret il doit être **donné et gardé** de manière **sécurisé**, et il doit être **aussi long que le message**.
@@ -229,7 +229,7 @@ Et plus le **réseaux est grand** plus il sera **difficile de se partager les cl
 
 ### Authentification
 
-+ Pas d'authentification (et si l'attaquant connait une partie du message?)
++ Pas d'authentification (et si l'attaquant connaît une partie du message?)
 
 Que faire?
 - MAC: Code d'authentification de message
@@ -275,7 +275,7 @@ Le pad ne doit surtout pas être ré-utilisé sinon de simples opérations math�
 + Chiffrement de flux
 
 Note:
-- Malgré ses problèmes le One-time-pad conserve un certain intéret pratique. Il est notamment utile car il est possible de l'utiliser "à la main", là ou la pluparts des autres algorithmes sont impossibles à appliquer sans l'aide d'ordinateurs.
+- Malgré ses problèmes le One-time-pad conserve un certain intérêt pratique. Il est notamment utile car il est possible de l'utiliser "à la main", là ou la plupart des autres algorithmes sont impossibles à appliquer sans l'aide d'ordinateurs.
 Dans le monde de l'espionnage un espion pourra se voir remettre une liste des clefs à utiliser et ainsi chiffrer/déchiffrer ses messages sans avoir besoin de matériel risquant d'attirer l'attention.
 - Sa capacité à être applicable à la main était très intéressante lorsque les ordinateurs n'existait pas encore. Et elle le reste encore aujourd'hui lorsque, par exemple, aucun matériel informatique de confiance n'est disponible.
 - Il est notamment utilisé dans le processus de distribution quantique de clefs.
